@@ -13,18 +13,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView title = findViewById(R.id.txtTitle);
+//        TextView title = findViewById(R.id.txtTitle);
         Button btnStartGame = findViewById(R.id.btnStartGame);
         Button btnSettings = findViewById(R.id.btnSettings);
         Button btnAbout = findViewById(R.id.btnAbout);
 
-        title.setText("Guessing Game");
-        title.setTextColor(getResources().getColor(android.R.color.black));
-
-        btnStartGame.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light));
-        btnSettings.setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
-        btnAbout.setBackgroundColor(getResources().getColor(android.R.color.black));
-        btnAbout.setTextColor(getResources().getColor(android.R.color.white));
+//        title.setText(R.string.guessing_game);
+//        title.setTextColor(getResources().getColor(android.R.color.black));
+//
+//        btnStartGame.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_light));
+//        btnSettings.setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
+//        btnAbout.setBackgroundColor(getResources().getColor(android.R.color.black));
+//        btnAbout.setTextColor(getResources().getColor(android.R.color.white));
 
         btnStartGame.setOnClickListener(new View.OnClickListener() {
             @Override

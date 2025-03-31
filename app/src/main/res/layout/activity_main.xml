@@ -5,55 +5,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#f4eae6">
+    android:background="#1e1e1e"
+    android:padding="16dp"
+    tools:context=".MainActivity">
 
+    <!-- Title -->
     <TextView
         android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingBottom="20dp"
-        android:text="Guessing Game"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
+        android:layout_marginTop="32dp"
+        android:text="@string/bug_hunter_challenge"
+        android:drawablePadding="8dp"
+        android:textColor="#0f0"
+        android:textSize="32sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="108dp" />
+        android:typeface="monospace"
+        app:drawableStartCompat="@drawable/bug_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
+    <!-- Subtitle/Tagline -->
+    <TextView
+        android:id="@+id/txtSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/code_debug_conquer"
+        android:textColor="#bbbbbb"
+        android:textSize="16sp"
+        android:typeface="monospace"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        app:layout_constraintBottom_toTopOf="@+id/btnStartGame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Start Game Button -->
     <Button
         android:id="@+id/btnStartGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Game"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="#4297a0"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4caf50"
+        android:text="@string/start_game"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="200dp"/>
+        app:layout_constraintTop_toBottomOf="@id/txtSubtitle"
+        app:layout_constraintBottom_toTopOf="@+id/btnSettings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Settings Button -->
     <Button
         android:id="@+id/btnSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Settings"
-        app:layout_constraintTop_toBottomOf="@id/btnStartGame"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="#2f5061"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#1976d2"
+        android:text="@string/settings"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintTop_toBottomOf="@id/btnStartGame"
+        app:layout_constraintBottom_toTopOf="@+id/btnAbout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- About Button -->
     <Button
         android:id="@+id/btnAbout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="About"
-        app:layout_constraintTop_toBottomOf="@id/btnSettings"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="#e57f84"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#e53935"
+        android:text="@string/about"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintTop_toBottomOf="@id/btnSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
