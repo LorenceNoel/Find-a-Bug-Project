@@ -15,4 +15,8 @@
     <string name="your_score_0_5">Your Score: 0 / 5</string>
     <string name="quiz_completed">You Found the Bugs!</string>
     <string name="keep_coding_keep_improving">Keep coding, keep improving!</string>
+    <string name="developers_njosshua_balita_nnoel_gonzales">Developers:\nJosshua Balita\nNoel Gonzales</string>
+    <string name="developer_icon">Developer Icon</string>
+    <string name="about_this_app">About This App</string>
+    <string name="project_date_2025_04_05_n_nfind_a_bug_is_an_interactive_game_designed_to_help_programmers_sharpen_their_debugging_skills_by_identifying_common_coding_errors_n_ninstructions_n_read_the_code_snippet_n_choose_the_correct_error_from_the_options_n_you_have_up_to_5_attempts_per_question_n_ngood_luck_and_happy_coding">Project Date: 2025-04-05\n\nFind-A-Bug is an interactive game designed to help programmers sharpen their debugging skills by identifying common coding errors.\n\nInstructions:\n• Read the code snippet.\n• Choose the correct error from the options.\n• You have up to 5 attempts per question.\n• 10 Choices are available, make sure to scroll through the options. \n\nGood luck and happy coding!</string>
 </resources>

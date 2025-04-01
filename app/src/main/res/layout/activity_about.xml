@@ -1,10 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#121212"
     tools:context=".AboutActivity">
+
+    <!-- Header Title -->
+    <TextView
+        android:id="@+id/tvAboutTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/about_this_app"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp" />
+
+    <!-- Developer Info Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDeveloperInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#1E1E1E"
+        app:layout_constraintTop_toBottomOf="@id/tvAboutTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp">
+
+        <LinearLayout
+            android:id="@+id/devContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <!-- Developer Icon -->
+            <ImageView
+                android:id="@+id/ivDeveloper"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/ic_dev"
+                android:contentDescription="@string/developer_icon"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Developer Names -->
+            <TextView
+                android:id="@+id/tvDevelopers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/developers_njosshua_balita_nnoel_gonzales"
+                android:textColor="#00FF00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Project Info and Instructions -->
+    <TextView
+        android:id="@+id/tvProjectInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/project_date_2025_04_05_n_nfind_a_bug_is_an_interactive_game_designed_to_help_programmers_sharpen_their_debugging_skills_by_identifying_common_coding_errors_n_ninstructions_n_read_the_code_snippet_n_choose_the_correct_error_from_the_options_n_you_have_up_to_5_attempts_per_question_n_ngood_luck_and_happy_coding"
+        android:textColor="#CCCCCC"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/cardDeveloperInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp" />
+
+    <!-- Return Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnReturnMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/return_to_main_menu"
+        android:textColor="#4CAF50"
+        android:backgroundTint="#333333"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
